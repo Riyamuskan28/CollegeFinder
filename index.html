@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Listing Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">CollegeFinder</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="collegelisting.html">Colleges</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Find Your Dream College</h1>
+            <p>Discover top colleges that match your needs and aspirations.</p>
+            <input type="text" placeholder="Search for colleges..." class="search-bar">
+            <button class="search-btn">Search</button>
+        </div>
+    </section>
+
+    <!-- Featured Colleges -->
+    <section class="featured-colleges">
+        <div class="container">
+            <h2>Featured Colleges</h2>
+            <div class="college-list">
+                <div class="college-item">
+                    <img src="cc.jpg" alt="College 1">
+                    <a href="collegedescription.html">
+
+                        <h3>College Name 1</h3>
+                    </a>
+                    <p>Brief description about College 1.</p>
+                </div>
+                <div class="college-item">
+                    <img src="college3.jpg" alt="College 2">
+                    <a href="collegedescription.html">
+                    <h3>College Name 2</h3>
+                    </a>
+                    <p>Brief description about College 2.</p>
+                </div>
+                <div class="college-item">
+                    <img src="college2.jpg" alt="College 3">
+                    <a href="collegedescription.html">
+                    <h3>College Name 3</h3>
+                    </a>
+                    <p>Brief description about College 3.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Students Say</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial-item">
+                    <p>"This website helped me find the perfect college for my needs."</p>
+                    <p>- Riya Muskan</p>
+                </div>
+                <div class="testimonial-item">
+                    <p>"The information provided is very accurate and helpful."</p>
+                    <p>- Romi</p>
+                </div>
+                <div class="testimonial-item">
+                    <p>"I highly recommend this platform to anyone searching for colleges."</p>
+                    <p>- Tanya</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 CollegeFinder. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: black;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .header {
+            background-color: black;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .nav {
+            display: inline-block;
+            float: right;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: orangered;
+        }
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav ul li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+        .nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            background-color: yellow;
+            color: black;
+            padding: 100px 0;
+            text-align: center;
+            margin-top: 60px;
+        }
+        .search-bar {
+            padding: 10px;
+            width: 300px;
+            margin-top: 20px;
+        }
+        .search-btn {
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .featured-colleges {
+            padding: 50px 0;
+            background-color: white;
+            color: black;
+            text-align: center;
+        }
+        .college-list {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .college-item {
+            width: 30%;
+        }
+        .college-item img {
+            width: 100%;
+            height: auto;
+        }
+        .testimonials {
+            padding: 50px 0;
+            background-color: yellow;
+            color: black;
+            text-align: center;
+        }
+        .testimonial-carousel {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .testimonial-item {
+            width: 30%;
+        }
+
+        footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</body>
+</html>
